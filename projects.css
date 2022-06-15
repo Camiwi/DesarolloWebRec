@@ -20,7 +20,12 @@
     text-align:center;
     font-size: 50px ;
 
+}
+.fotos{
 
+
+    margin: auto;
+    padding-bottom:7%;
 
 }
 .page-block{
@@ -138,14 +143,14 @@
     margin-right:-15px
 }
 
-.topnav {
+.topnav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgb(51, 51, 51);
     overflow: hidden;
     width: 100% ;
     height: 100%;
-    border-radius: calc(var(--curve) * 1px);
+    border-radius: 50px;
 
 }
 .topnav a {
@@ -165,12 +170,35 @@
     color: white;
 }
 .bar1{
-    padding:8px;
+    padding: 30px;
+    background-color: #033500;
+    color: white;
     display: flex; 
+    border-radius: 50px;
     justify-content: space-around;
+    
+    
 
 
 }
+
+.btn{
+
+    background-color: lightgreen; /* Green */
+
+    height: 50px;
+    color: white;
+    justify-self: center;
+    text-align: center;
+    margin-top: 1.7vh;
+    text-decoration: none;
+
+    font-size: 16px;
+    border-radius: 5px;
+
+
+}
+
 .container{
 
 
@@ -178,24 +206,35 @@ width: 70%;
 height: 50%;
 margin: auto;
 
+
 }
 .descripcion{
 color: #033500;
 margin: auto;
 margin-top: 20px;
-padding-top: 15%;
+padding-top: 5%;
 text-align: justify;
 font-size: 30px;
 
 }
+
 .progressbar1{
-    padding-top:2dp;
-    padding-bottom:2dp;
-    padding-left:2dp;
-    padding-right:2dp;
+    padding:3vh;
+ 
     height: 30px;
-    color: #08d43b;
+    
+   justify-items: center;
+    
 }
+.progressbar{
+
+    height: 20px;
+   
+    border-radius: 50px;
+
+
+}
+
 footer {
     text-align: center;
     padding: 3px;
