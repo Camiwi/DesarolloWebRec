@@ -27,20 +27,37 @@ if (isset($_POST["btningresar"]))
 
 if (isset($_POST["btnregistrar"]))
 {
-    $sqlgrabar = "INSERT INTO login(usuario,password) values ('$nombre','$pass')";
 
 
-    if(mysqli_query($conn,$sqlgrabar))
+ 
+
+
+    $query = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '$nombre' AND password ='$pass'");
+    $nr = mysqli_num_rows($query);
+
+
+    if($nr==1)
     {
-        echo "<script> alert('Usuario Registrado Correctamente'); window.location='index.html'</script>";
-        session_start();
-        /*session is started if you don't write this line can't use $_Session  global variable*/
-        $_SESSION["newsession"]="usuario";
-        echo $_SESSION["newsession"];
+        echo "<script> alert('El usuario ya existe'); window.location='index.html'</script>";
 
     }else
     {
-        echo "Error: ".sql."<br>".mysql_error($conn);
+        $sqlgrabar = "INSERT INTO login(usuario,password) values ('$nombre','$pass')";
+
+        if(mysqli_query($conn,$sqlgrabar))
+        {
+            echo "<script> alert('Usuario Registrado Correctamente'); window.location='index.html'</script>";
+            session_start();
+            /*session is started if you don't write this line can't use $_Session  global variable*/
+            $_SESSION["newsession"]="usuario";
+            echo $_SESSION["newsession"];
+    
+        }else
+        {
+            echo "Error: ".sql."<br>".mysql_error($conn);
+        }
     }
+
+ 
 }
 ?>
