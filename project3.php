@@ -1,4 +1,19 @@
 <?php
+function getmoney(){
+
+  $dbhost = "localhost";
+  $dbuser = "root";
+  $dbpass = "";
+  $dbname = "test2";
+  $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+  $proj="agua";
+  $sqlnew = "SELECT SUM(cantidad) as total FROM donations WHERE Proj = '$proj'";
+  $query = mysqli_query($conn,$sqlnew);
+  $result = mysqli_fetch_assoc($query);
+
+
+  return $result;
+}
 
 ?>
 <!DOCTYPE html>
@@ -100,7 +115,7 @@
             <div class="bar1" action="http://localhost/PaginaWebProyeecto/action_page.php">
 
               <div style="padding: 3vh; font-size: 18px;">Dinero recaudado:</div>
-              <div class="progressbar1" > <progress class="progressbar" max="1000" value="850" ></div>
+              <div class="progressbar1" > <progress class="progressbar" max="1000" value=getmoney() ></div>
               <button onclick="document.location='registrar_pago.html'" class="btn">Contribuir</button>
 
             </div>
