@@ -20,7 +20,7 @@
             <input type="submit" vale= "Registrar" name="btnregistrar">
 
             <br>
-            <a href="login.html" style="float:right">Ya tengo cuenta</a>
+            <a href="login.php" style="float:right">Ya tengo cuenta</a>
         </form>
     </div>
 </body>

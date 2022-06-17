@@ -1,20 +1,6 @@
 <?php
 
-function getmoney(){
 
-  $dbhost = "localhost";
-  $dbuser = "root";
-  $dbpass = "";
-  $dbname = "test2";
-  $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-  $proj="air";
-  $sqlnew = "SELECT SUM(cantidad) as total FROM donations WHERE Proj = '$proj'";
-  $query = mysqli_query($conn,$sqlnew);
-  $result = mysqli_fetch_assoc($query);
-
-
-  return $result;
-}
 
 
 
@@ -55,7 +41,7 @@ function getmoney(){
           <a href="index.html">Home</a>
           <a href="index.html">Proyectos</a>
           <a href="index.html">Contact</a>
-          <a href="login.html">Login</a>
+          <a href="login.php">Login</a>
         </div>
     </div>
 
@@ -117,8 +103,29 @@ function getmoney(){
                 <div class="bar1" action="http://localhost/PaginaWebProyeecto/action_page.php">
 
                   <div style="padding: 3vh; font-size: 18px;">Dinero recaudado:</div>
-                  <div class="progressbar1" > <progress class="progressbar" max="1000" value=getmoney() ></div>
-                  <button onclick="document.location='registrar_pago.html'" class="btn">Contribuir</button>
+                  <?php 
+
+
+
+  $dbhost = "localhost";
+  $dbuser = "root";
+  $dbpass = "";
+  $dbname = "test2";
+  $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+  $proj="Water";
+  $sqlnew = "SELECT SUM(cantidad) as total FROM donations WHERE Proj = '$proj'";
+  $query = mysqli_query($conn,$sqlnew);
+  $result = mysqli_fetch_assoc($query);
+  $money=$result["total"];
+
+
+  echo" <div class='progressbar1' > <progress class='progressbar' max='10000' value=$money></progress>"
+
+
+
+
+?></div>
+                  <button onclick="document.location='registrar_pago.php'" class="btn">Contribuir</button>
 
                 </div>
 
