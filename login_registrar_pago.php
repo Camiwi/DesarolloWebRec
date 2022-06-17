@@ -17,11 +17,11 @@ if (isset($_POST["btningresar"]))
 
     if($nr==1)
     {
-        echo "<script> alert('Bienvenido $nombre'); window.location='donationPage.html'</script>";
+        echo "<script> alert('Bienvenido $nombre'); window.location='donationPage.php'</script>";
 
     }else
     {
-        echo "<script> alert('Usuario no existe'); window.location='login_pago.html'</script>";
+        echo "<script> alert('Usuario no existe'); window.location='login_pago.php'</script>";
     }
 }
 
@@ -32,7 +32,7 @@ if (isset($_POST["btnregistrar"]))
 
     if(mysqli_query($conn,$sqlgrabar))
     {
-        echo "<script> alert('Usuario Registrado Correctamente'); window.location='donationPage.html'</script>";
+        echo "<script> alert('Usuario Registrado Correctamente'); window.location='donationPage.php'</script>";
        
 
     }else

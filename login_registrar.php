@@ -21,7 +21,7 @@ if (isset($_POST["btningresar"]))
 
     }else
     {
-        echo "<script> alert('Usuario no existe'); window.location='login.html'</script>";
+        echo "<script> alert('Usuario no existe'); window.location='login.php'</script>";
     }
 }
 
