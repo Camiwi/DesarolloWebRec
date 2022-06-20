@@ -29,16 +29,14 @@ if (isset($_POST["btnregistrar"]))
 {
 
 
- 
-
-
     $query = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '$nombre' AND password ='$pass'");
     $nr = mysqli_num_rows($query);
+    $query2 = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '$nombre'");
+    $nr2 = mysqli_num_rows($query2);
 
-
-    if($nr==1)
+    if($nr2==1)
     {
-        echo "<script> alert('El usuario ya existe'); window.location='index.html'</script>";
+        echo "<script> alert('El usuario ya existe'); window.location='registrar.php'</script>";
 
     }else
     {
