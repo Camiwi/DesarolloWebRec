@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="form1">
-        <form action="http://localhost/DesarolloWebRec/login_registrar.php" method="post">
+        <form action="login_registrar.php" method="post">
             <h2>Crear una cuenta</h2>
             <input type="text" placeholder= "Usuario" name="usuario" required>
             <input type="password" placeholder= "Contraseña" name="pass" required>
