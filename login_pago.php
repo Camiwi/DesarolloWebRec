@@ -13,14 +13,14 @@
 </head>
 <body>
     <div class="form1">
-        <form action="http://localhost/PaginaWebProyeecto/login_registrar_pago.php" method="post">
+        <form action="login_registrar_pago.php" method="post">
             <h2>Iniciar Sesion</h2>
             <input type="text" placeholder= "Usuario" name="usuario" required>
             <input type="password" placeholder= "Contraseña" name="pass" required>
             <input type="submit" vale= "Ingresar" name="btningresar">
 
             <br>
-            <a href="registrar_pago.html" style="float:right">Crear una cuenta</a>
+            <a href="registrar_pago.php" style="float:right">Crear una cuenta</a>
     
         </form>
     </div>

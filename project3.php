@@ -53,7 +53,7 @@ function getmoney(){
           <a href="index.html">Home</a>
           <a href="index.html">Proyectos</a>
           <a href="index.html">Contact</a>
-          <a href="login.html">Login</a>
+          <a href="login.php">Login</a>
         </div>
 
 
@@ -137,7 +137,7 @@ echo" <div class='progressbar1' > <progress class='progressbar' max='10000' valu
 
 
 ?></div>
-              <button onclick="document.location='registrar_pago.php'" class="btn">Contribuir</button>
+              <button onclick="document.location='login_pago.php'" class="btn">Contribuir</button>
 
             </div>
 

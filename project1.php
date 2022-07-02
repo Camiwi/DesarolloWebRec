@@ -125,7 +125,7 @@
 
 
 ?></div>
-                  <button onclick="document.location='registrar_pago.php'" class="btn">Contribuir</button>
+                  <button onclick="document.location='login_pago.php'" class="btn">Contribuir</button>
 
                 </div>
 
