@@ -18,10 +18,9 @@
             <input type="text" placeholder= "Usuario" name="usuario" required>
             <input type="password" placeholder= "Contraseña" name="pass" required>
             <input type="submit" vale= "Ingresar" name="btningresar">
-
             <br>
             <a href="registrar.php" style="float:right">Crear una cuenta</a>
-    
+            
         </form>
     </div>
 </body>

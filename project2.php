@@ -143,7 +143,7 @@ echo" <div class='progressbar1' > <progress class='progressbar' max='10000' valu
 
 
 ?></div>
-                  <button onclick="document.location='login_pago.php'" class="btn">Contribuir</button>
+                 <button onClick="MyWindow=window.open('login_pago.php','MyWindow','width=600,height=300,'); return false;"class="btn">Contribuir</button>
 
                 </div>
 
@@ -167,8 +167,57 @@ echo" <div class='progressbar1' > <progress class='progressbar' max='10000' valu
 
                 <hr class="rounded">
                 <footer class="footer">
-                  <p>GreenFunding<br>
-                  <a href="Greenfunding@gmail.com">GreenFunding@gmail.com</a></p>
-                </footer>
+      <div class="footer__addr">
+        <h1 class="footer__logo">GreenFunding</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          Universidad Europea, Villaviciosa de Odon<br>
+          Tfno: +34 654 456 123<br>
+              
+          <h2 class="nav__title">GreenFunding@gmail.com</h2>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Proyectos</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="project3.php">Save The Air</a>
+            </li>
+    
+            <li>
+              <a href="project1.php">Save the Water</a>
+            </li>
+                
+            <li>
+              <a href="project2.php">Save the Land</a>
+            </li>
+          </ul>
+        </li>
+        
+        
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Navigation</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            
+         
+            
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2022 GreenFunding. All rights reserved.</p>
+      </div>
+    </footer>
             </body>
 </html>

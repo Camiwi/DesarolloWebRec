@@ -25,7 +25,7 @@ if (isset($_POST["btningresarProy"]))
     
     {
         
-        echo "<script> alert('Donacion Recibido, Total: $resultstring'); window.location='index.html'</script>";
+        echo "<script> alert('Donacion Recibido, Total: $resultstring'); window.close()</script>";
         
         session_start();
         $_SESSION["newsession"]="usuario";

@@ -1,5 +1,5 @@
 html {
-    background-color: #38ac4b;
+    background-color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -28,7 +28,7 @@ html {
     text-transform: uppercase;
     display:inline-block;
     margin: 40px 8px 10px 8px; 
-    color: #cccccc;
+    color: #fff;
   }
   
   
@@ -50,7 +50,7 @@ html {
   .form1 {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
+    background: #31c55e;
     padding: 30px;
     width: 90%;
     max-width: 450px;
