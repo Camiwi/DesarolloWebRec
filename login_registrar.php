@@ -44,7 +44,7 @@ if (isset($_POST["btnregistrar"]))
 
         if(mysqli_query($conn,$sqlgrabar))
         {
-            echo "<script> alert('Usuario Registrado Correctamente'); window.close'</script>";
+            echo "<script> alert('Usuario Registrado Correctamente'); window.close()'</script>";
             session_start();
             /*session is started if you don't write this line can't use $_Session  global variable*/
             $_SESSION["newsession"]="usuario";

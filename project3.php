@@ -52,7 +52,7 @@ function getmoney(){
         <div class="topnav">
           <a href="index.html">Home</a>
           <a href="index.html">Proyectos</a>
-          <a href="index.html">Contact</a>
+          <a href="index.html">Quienes Somos</a>
           <a href="login.php">Login</a>
         </div>
 
@@ -137,7 +137,7 @@ echo" <div class='progressbar1' > <progress class='progressbar' max='10000' valu
 
 
 ?></div>
-              <button onClick="MyWindow=window.open('login_pago.php','MyWindow','width=600,height=300,'); return false;"class="btn">Contribuir</button>
+              <button onClick="MyWindow=window.open('login_pago.php','MyWindow','width=600,height=600,'); return false;"class="btn">Contribuir</button>
 
             </div>
 
